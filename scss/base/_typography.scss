@@ -1,0 +1,73 @@
+body {
+  @include background;
+  background: $color-primary;
+  box-sizing: border-box;
+  color: set-text-color($color-primary);
+  height: 100%;
+  font-family: "Segoe UI", "Tahomma", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  line-height: 1.5;
+  // padding: 3rem;
+}
+
+.header-primary {
+  color: $color-white;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1.25rem;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+
+  &--firstName {
+    display: block;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &--lastName {
+    display: block;
+    color: $color-secondary;
+    
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+}
+
+.header-subtitle {
+  color: $color-white;
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($color-primary, 2), 0.5);
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+  display: block;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.header-secondary{
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-secondary,
+  //   $color-black
+  // );
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  color: $color-blue-light;
+  letter-spacing: 2px;
+  margin: 5rem 0;
+  // justify-content: center;
+
+}

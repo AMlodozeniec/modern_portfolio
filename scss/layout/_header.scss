@@ -1,0 +1,49 @@
+.header {
+  height: 95vh;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: red;
+  }
+
+  &__logo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    // &__firstName {
+    //   font-size: 4.5rem;
+    //   text-align: center;
+    // }
+  
+    // &__lastName{
+    //   color: $color-secondary;
+    // }
+  
+    // &__subtitle{
+    //   font-size: 2rem;
+    //   margin-bottom: 2rem;
+    //   padding: 0.2rem 1rem;
+    //   background: rgba(lighten($color-primary, 2), 0.5);
+    //   text-align: center;
+    // }
+  }
+
+}

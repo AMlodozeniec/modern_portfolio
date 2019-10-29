@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 85%; // 1rem  = 13.6px; 13.6px / 16px = 85%
+
+  @include respond(big-desktop){
+    font-size: 110%;
+  }
+
+  @include respond(tab-land){
+    font-size: 62.5%;
+  }
+
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+}

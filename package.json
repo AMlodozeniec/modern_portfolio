@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive Web Portfolio",
   "main": "index.js",
+  "homepage": "https://amlodozeniec.github.io/modern_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass scss/main.scss dist/css/main.css -w",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Adam Mlodozeniec",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }

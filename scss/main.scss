@@ -1,68 +1,69 @@
-@import "config";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button"; 
+
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
+
 @import "menu";
+ 
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", "Tahomma", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
-  line-height: 1.5;
-}
 
 // Headings
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400;
+// h1,
+// h2,
+// h3 {
+  
 
-  &.lg-heading {
-    font-size: 4rem;
-  }
+//   &.lg-heading {
+//     font-size: 4.5rem;
+//     text-align: center;
+//   }
 
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
-  }
-}
+//   &.sm-heading {
+//     font-size: 2rem;
+//     margin-bottom: 2rem;
+//     padding: 0.2rem 1rem;
+//     background: rgba(lighten($color-primary, 2), 0.5);
+//     text-align: center;
+//   }
+// }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
+// a {
+//   color: #fff;
+//   text-decoration: none;
+// }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
 
-.text-secondary {
-  color: $secondary-color;
-}
 
 main {
-  padding: 4rem;
+  // padding: 4rem;
   //height: 100%;
-  min-height: calc(100vh - 60px);
+  // min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
 
+    .home__logo--resume {
+      width: 28px;
+      height: 32px;
+    }
+
     a {
       padding: 0.4rem;
-      color: set-text-color($primary-color);
+      color: set-text-color($color-primary);
 
       &:hover {
-        color: $secondary-color;
+        color: $color-secondary;
         @include easeOut();
       }
     }
@@ -88,7 +89,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $color-secondary 3px solid;
   }
 
   .bio {
@@ -109,9 +110,9 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($color-primary, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $color-secondary 5px solid;
   }
 }
 
@@ -127,7 +128,7 @@ main {
 
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
+      border-color: $color-secondary;
       @include easeOut;
     }
   }
@@ -150,45 +151,23 @@ main {
 
     &:hover {
       padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
+      background: $color-secondary;
+      color: set-text-color($color-secondary);
 
       span {
-        color: set-text-color($secondary-color);
+        color: set-text-color($color-secondary);
       }
     }
   }
 }
 
-//Button Styles
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
-}
 
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
-}
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
+  background: darken($color-primary, 10);
+  color: set-text-color($color-primary);
   height: 60px;
 }
 

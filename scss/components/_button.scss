@@ -1,0 +1,102 @@
+//Button Styles
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    display: inline-block;
+    border-radius: 1rem;
+    width: 30%; 
+    
+    transition: all .2s;
+    
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+    
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(0px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--grey {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover{
+      background-color: $color-secondary;
+      color: $color-black;
+    }
+
+    
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-out 0.25s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-project{
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    display: inline-block;
+    // border-radius: 1rem;
+    width: 49%; 
+    
+    transition: all .2s;
+    
+    // &:not(:last-child){
+    //   margin-right: 1.5rem;
+    // }
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(0px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--light{
+    color: $color-black;
+    background-color: $color-grey-light-1;
+
+    &:hover{
+      background-color: $color-secondary;
+      color: $color-black;
+    }
+
+  }
+
+  &--dark{
+    color: $color-white;
+    background-color: $color-grey-dark-1;
+
+    &:hover{
+      background-color: $color-secondary;
+      color: $color-black;
+    }
+
+  }
+}
