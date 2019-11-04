@@ -389,6 +389,9 @@ body {
   @media (max-width: 30em) {
     .section-projects {
       padding: 27rem 0 10rem 0; } }
+  @media (max-width: 23.4em) {
+    .section-projects {
+      padding: 32rem 0 10rem 0; } }
 
 .section-about {
   padding: 10rem 0;
@@ -411,6 +414,9 @@ body {
   @media (max-width: 30em) {
     .section-contact {
       padding: 40rem 0 0 0; } }
+  @media (max-width: 23.4em) {
+    .section-contact {
+      padding: 45rem 0 0 0; } }
 
 .menu-btn {
   position: absolute;
