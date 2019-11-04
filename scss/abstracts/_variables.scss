@@ -1,18 +1,35 @@
 
 // COLORS
-$color-primary: #444;
-$color-secondary: rgb(240, 226, 36);
+$color-primary: #0c31adb2;
+$color-primary-light: #49a7ff;
+
+$color-secondary: #ffffff; 
+// $color-secondary: rgb(240, 226, 36);
+$color-secondary-light: rgb(252, 248, 204);
+$color-secondary-dark: rgba(230, 214, 3, 0.74);
 // $color-secondary-light: 
 
-$color-blue-light: #2998ff;
+$color-blue-light-1: #49a7ff;
 
 $color-grey-light-1: #f7f7f7; 
+$color-grey-light-2: #f4f2f2;; 
 
 $color-grey-dark-1: #777; 
 $color-grey-dark-2: rgba(119, 119, 119, 0.356); 
+$color-grey-dark-3: #333;
+
 
 $color-white: #fff;
 $color-black: #000; 
+$color-yellow: rgb(240, 226, 36);
+$color-blue: rgb(0, 110, 255);
+
+// Font
+$default-font-size: 1.6rem;
+$icon-size: 5rem;
+
+//Shadows
+$box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
 //GRID
 $grid-width: 83.8rem;

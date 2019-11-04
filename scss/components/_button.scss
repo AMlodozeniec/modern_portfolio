@@ -8,7 +8,7 @@
     font-weight: 700;
     padding: 1.5rem 0;
     display: inline-block;
-    border-radius: 1rem;
+    border-radius: .1rem;
     width: 30%; 
     
     transition: all .2s;
@@ -30,13 +30,17 @@
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-  &--grey {
+  &--dark {
     background-color: $color-primary;
-    color: $color-white;
+    // color: $color-white;
+  color: $color-yellow;
+
 
     &:hover{
       background-color: $color-secondary;
       color: $color-black;
+  // color: $color-yellow;
+
     }
 
     
@@ -56,9 +60,9 @@
     text-decoration: none;
     font-weight: 700;
     padding: 1.5rem 0;
-    display: inline-block;
-    // border-radius: 1rem;
-    width: 49%; 
+    // display: inline-block;
+    // border-radius: .4rem;
+    // width: 49%; 
     
     transition: all .2s;
     
@@ -80,10 +84,12 @@
 
   &--light{
     color: $color-black;
-    background-color: $color-grey-light-1;
+    background-color: rgba($color-blue-light-1,0.9);
+    display: block;
+
 
     &:hover{
-      background-color: $color-secondary;
+      // background-color: $color-secondary;
       color: $color-black;
     }
 
@@ -91,11 +97,13 @@
 
   &--dark{
     color: $color-white;
-    background-color: $color-grey-dark-1;
+    background-color: rgba($color-primary,0.9);
+    display: block;
+
 
     &:hover{
-      background-color: $color-secondary;
-      color: $color-black;
+      // background-color: $color-secondary;
+      // color: $col  or-black;
     }
 
   }

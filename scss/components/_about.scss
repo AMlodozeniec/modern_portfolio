@@ -1,0 +1,38 @@
+.about{
+
+  &__shape{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 6rem;
+    box-shadow: 0 .1rem 3rem slateblue;
+
+    @include respond(bigPhone) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(smallPhone){
+      transform: translate(-6rem,6rem);
+    }
+    
+  }
+  &__img{
+    width: 100%;
+    transform: translateY(-1.4rem);
+    
+    // border-radius: 50%;
+  }
+
+  &__text{
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    @include respond(bigPhone) {
+      padding-left: 7rem;
+    }
+    // background-color: $color-black;
+    // text-align: center;
+  }
+}  
