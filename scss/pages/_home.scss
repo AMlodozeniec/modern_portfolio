@@ -1,24 +1,26 @@
 .section-projects {
 	// @include background($color-secondary, $color-secondary-light);
 	background-color: #f7f7f7;
+	width: 100%;
 	padding: 12rem 0;
+	// padding: 12rem 0;
 	text-align: center;
 	margin-top: -21vh;
 
+	@include respond(desktop) {
+		padding-top: 15rem;
+	}
+
 	@include respond(tab-port) {
-		padding: 15rem 0;
+		padding-top: 20rem;
 	}
 
 	@include respond(phone){
-		padding: 18rem 0 10rem 0	;    
-	}
-	
-	@include respond(smallPhone){
 		padding: 27rem 0 10rem 0	;    
 	}
 	
 	@include respond(iPhoneX){
-		padding: 32rem 0 10rem 0;    
+		padding: 35rem 0 10rem 0;    
   }
 }
 
@@ -26,7 +28,7 @@
 	padding: 10rem 0;
 	@include background($color-primary, $color-primary-light);
 	background-color: rgba($color-primary, $background-opacity);
-  clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 90%);
 
 
 	margin-top: -10rem;
@@ -35,6 +37,7 @@
 
 .section-contact {
 	padding: 15rem 0 0 0;
+	width: 100%;
 	// background-image: linear-gradient(
   //       to right bottom,
   //       rgba($color-secondary, 0.70),
@@ -43,8 +46,16 @@
 	background-color: #f7f7f7;
 	margin-top: -33vh;
 
+	@include respond(desktop){
+		padding: 20rem 0 0 0;
+	}
+
+	@include respond(tab-port){
+		padding: 27rem 0 0 0;
+	}
+
 	@include respond(phone){
-		padding: 25rem 0 0 0;
+		padding: 36rem 0 0 0;
 	}
 
 	@include respond(smallPhone){

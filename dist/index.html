@@ -1,162 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/41fad9db76.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Adam Mlodozeniec | Web Portfolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <!-- <div class="header__logo-box">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/41fad9db76.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/icon-font.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Adam Mlodozeniec | Web Portfolio</title>
+</head>
+
+<body class="container">
+  <header class="header">
+    <!-- <div class="header__logo-box">
         <a href="index.html" class="header__logo">Adam M</a>
       </!-->
 
-      <div class="header__text-box">
-        <h1 class="header-primary">
-            <span class="header-primary--firstName">Adam</span> 
-            <span class="header-primary--lastName">Mlodozeniec</span>
-        </h1>
-        <h2 class="header-subtitle u-margin-bottom-small">Software Engineer</h2>
-        <a href="#section-projects" class="btn btn--dark btn--animated">View Projects</a>
-        <a href="#section-about" class="btn btn--dark btn--animated">About me</a>
-        <a
-            href="https://www.dropbox.com/s/p9t1u30hj44elfs/Adam.Mlodozeniec_TechResume_10_13_19.pdf?dl=0"
-            target="_blank"
-            class="btn btn--dark btn--animated">
-            Resume
-        </a>
-      </header>
-      
-      <main>
-        <section id="section-projects" class="section-projects">
-          <div class="u-center-text u-margin-bottom-medium">
-            <h2 class="header-secondary">Check out some of my projects</h2>
+    <div class="header__text-box">
+      <h1 class="header-primary">
+        <span class="header-primary--firstName">Adam</span>
+        <span class="header-primary--lastName">Mlodozeniec</span>
+      </h1>
+      <h2 class="header-subtitle u-margin-bottom-small">Software Engineer</h2>
+      <a href="#section-projects" class="btn btn--dark btn--animated">View Projects</a>
+      <a href="#section-about" class="btn btn--dark btn--animated">About me</a>
+      <a href="https://www.dropbox.com/s/p9t1u30hj44elfs/Adam.Mlodozeniec_TechResume_10_13_19.pdf?dl=0" target="_blank"
+        class="btn btn--dark btn--animated">
+        Resume
+      </a>
+  </header>
+
+  <main>
+    <section id="section-projects" class="section-projects">
+      <div class="u-center-text u-margin-bottom-medium">
+        <h2 class="header-secondary">Check out some of my projects</h2>
+      </div>
+      <div class="project">
+        <div class="project__content">
+          <div class="project__container">
+            <h3 class="header-secondary header-secondary__project">Crypto Table</h3>
+            <img src="img/crypto.jpg" alt="" class="project__img">
+            <a href="#!" class="btn-project btn-project--light">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="#!" class="btn-project btn-project--dark">
+              <i class="fab fa-github"></i> Github
+            </a>
           </div>
-          <div class="project">
-            <div class="project__content">
-              <div class="project__container">        
-                  <h3 class="header-secondary header-secondary__project">Crypto Table</h3>
-                  <img src="img/crypto.jpg" alt="" class="project__img">
-                  <a href="#!" class="btn-project btn-project--light">
-                    <i class="fas fa-eye"></i> Project
-                  </a>
-                  <a href="#!" class="btn-project btn-project--dark">
-                    <i class="fab fa-github"></i> Github
-                  </a>
-              </div>
-              <div class="project__text">
-                <p class="project__text--description">Sortable table that displays live current cryptocurrency information from API <br><span>Created with React</span></p> 
-              </div>
+          <div class="project__text">
+            <p class="project__text--description">Sortable table that displays live current cryptocurrency information
+              from API <br><span>Created with React</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__content">
+          <div class="project__container">
+            <h3 class="header-secondary header-secondary__project">Meme Generator</h3>
+            <img src="img/memeGenerator.jpg" alt="" class="project__img">
+            <a href="#!" class="btn-project btn-project--light">
+              <i class="fas fa-eye"></i> Project
+            </a>
+            <a href="#!" class="btn-project btn-project--dark">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+          <div class="project__text">
+            <p class="project__text--description">Web app that grabs a random Meme from API and allows user to type top
+              and bottom text for meme <br><span>Created with React</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-about" class="section-about">
+      <div class="about">
+
+        <div class="row">
+          <div class="col-2-of-3">
+            <div class="u-margin-bottom-small">
+              <h2 class="header-secondary header-secondary__light">About Me</h2>
+            </div>
+            <p class="about__text">I'm Adam, born and raised New Yorker from Manhattan, and I'm a software junkie and
+              self proclaimed self improvement nut, so I'm always looking for the best way to improve myself, mentally
+              and physically. <br><br>
+              Starting from humble beginnings as a green Python developer in college, I've been giddily diving in to
+              other languages and frameworks like React, Java, and Golang. <br><br>
+              Coming from experience with the financial sector, I want to shift course and develop new exciting
+              technologies for the people and impact the everyday person's life positively.</p>
+          </div>
+          <div class="col-1-of-3">
+            <figure class="about__shape">
+              <img src="img/portrait.jpg" alt="Adam Mlodozeniec" class="about__img">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="contact">
+        <div class="u-center-text">
+          <h2 class="header-secondary header-secondary__dark">Contact Me</h2>
+        </div>
+        <div class="u-center-text">
+          <p class="header-contact">Email me or poke around my Github if you have time to kill!</p>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="contact__icon-box">
+              <a href="https://www.linkedin.com/in/adam-mlodozeniec-47b6aba0/" target="_blank">
+                <i class="fab fa-linkedin contact__icon-box--linkedIn"></i>
+              </a>
+              <h3 class="header-contact__icon-text">LinkedIn</h3>
             </div>
           </div>
 
-          <div class="project">
-              <div class="project__content">
-                <div class="project__container">        
-                    <h3 class="header-secondary header-secondary__project">Meme Generator</h3>
-                    <img src="img/memeGenerator.jpg" alt="" class="project__img">
-                    <a href="#!" class="btn-project btn-project--light">
-                      <i class="fas fa-eye"></i> Project
-                    </a>
-                    <a href="#!" class="btn-project btn-project--dark">
-                      <i class="fab fa-github"></i> Github
-                    </a>
-                </div>
-                <div class="project__text">
-                  <p class="project__text--description">Web app that grabs a random Meme from API and allows user to type top and bottom text for meme <br><span>Created with React</span></p> 
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section id="section-about" class="section-about">
-          <div class="about">
-            
-            <div class="row">
-              <div class="col-2-of-3">
-                  <div class="u-margin-bottom-small">
-                      <h2 class="header-secondary header-secondary__light">About Me</h2>
-                    </div>
-                <p class="about__text">I'm Adam, born and raised New Yorker from Manhattan, and I'm a software junkie and self proclaimed self improvement nut, so I'm always looking for the best way to improve myself, mentally and physically. <br><br>
-                  Starting from humble beginnings as a green Python developer in college, I've been giddily diving in to other languages and frameworks like React, Java, and Golang. <br><br>
-                  Coming from experience with the financial sector, I want to shift course and develop new exciting technologies for the people and impact the everyday person's life positively.</p>
-              </div>
-              <div class="col-1-of-3">
-                <figure class="about__shape">
-                  <img src="img/portrait.jpg" alt="Adam Mlodozeniec" class="about__img">
-                </figure>
-              </div>
+          <div class="col-1-of-3">
+            <div class="contact__icon-box">
+              <a href="https://github.com/AMlodozeniec" target="_blank" class="contact__icon-link">
+                <i class="fab fa-github contact__icon-box--github"></i>
+              </a>
+              <h3 class="header-contact__icon-text">Github</h3>
             </div>
           </div>
-        </section>
 
-        <section class="section-contact">
-          <div class="contact">
-            <div class="u-center-text">
-              <h2 class="header-secondary header-secondary__dark">Contact Me</h2>
+          <div class="col-1-of-3">
+            <div class="contact__icon-box">
+              <a href="mailto:amlodoz8@gmail.com">
+                <i class="fas fa-envelope contact__icon-box--email"></i>
+              </a>
+              <h3 class="header-contact__icon-text">Email</h3>
+              <!-- <p class="header-email">amlodoz8@gmail.com</p> -->
             </div>
-            <div class="u-center-text">
-              <p class="header-contact">Email me or poke around my Github if you have time to kill!</p>
-            </div>
-            <div class="row">
-              <div class="col-1-of-3">
-                <div class="contact__icon-box">
-                  <a
-                    href="https://www.linkedin.com/in/adam-mlodozeniec-47b6aba0/"
-                    target="_blank"
-                  >
-                  <i class="fab fa-linkedin contact__icon-box--linkedIn"></i>
-                </a>
-                <h3 class="header-contact__icon-text">LinkedIn</h3>
-                </div>
-              </div>
-
-              <div class="col-1-of-3">
-                <div class="contact__icon-box">
-                  <a 
-                    href="https://github.com/AMlodozeniec" 
-                    target="_blank"
-                    class="contact__icon-link"
-                  >
-                    <i class="fab fa-github contact__icon-box--github"></i>
-                  </a>
-                  <h3 class="header-contact__icon-text">Github</h3>
-                </div>
-              </div>
-              
-              <div class="col-1-of-3">
-                <div class="contact__icon-box">
-                  <a 
-                    href="mailto:amlodoz8@gmail.com"  
-                  >
-                    <i class="fas fa-envelope contact__icon-box--email"></i>
-                  </a>
-                  <h3 class="header-contact__icon-text">Email</h3>
-                  <!-- <p class="header-email">amlodoz8@gmail.com</p> -->
-                </div>
-              </div>
           </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer">
-          <div class="footer__text">
-            Adam Mlodozeniec &copy; 2019 
-          </div>
-        </footer>
-      </main>
-        
-      <script src="js/main.js"></script>
-                <!-- <div class="icons">
+    <footer class="footer">
+      <div class="footer__text">
+        Adam Mlodozeniec &copy; 2019
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+  <!-- <div class="icons">
                   <a
                     href="https://www.dropbox.com/s/p9t1u30hj44elfs/Adam.Mlodozeniec_TechResume_10_13_19.pdf?dl=0"
                     target="_blank"
@@ -174,9 +168,9 @@
                   </a>
                 </div>
               </div> -->
-              
-          
-                <!-- <div class="menu-btn">
+
+
+  <!-- <div class="menu-btn">
                   <div class="btn-line"></div>
                   <div class="btn-line"></div>
                   <div class="btn-line"></div>
@@ -201,5 +195,6 @@
                     </li>
                   </ul>
                 </nav> -->
-  </body>
+</body>
+
 </html>
