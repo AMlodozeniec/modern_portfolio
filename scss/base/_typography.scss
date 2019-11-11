@@ -97,6 +97,7 @@ body {
   text-align: left;
   color: $color-primary;
   display: table;
+  margin-left: 3rem;
   // height: auto;
   // text-align: center;
   //   vertical-align: middle;
@@ -105,8 +106,9 @@ body {
 
   &--description {
     // color: $color-black;
-    display: table-cell;
+    // display: table-cell;
     vertical-align: middle;
+    margin-top: 3rem;
   // text-align: center;
 
   // vertical-align: middle;

@@ -121,11 +121,12 @@ body {
 
 .project__text {
   text-align: left;
-  color: #0c31adb2;
-  display: table; }
+  color: rgba(12, 49, 173, 0.698);
+  display: table;
+  margin-left: 3rem; }
   .project__text--description {
-    display: table-cell;
     vertical-align: middle;
+    margin-top: 3rem;
     font-size: 2.2rem; }
     .project__text--description span {
       font-size: 1.4rem;
@@ -211,7 +212,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--dark {
-  background-color: #0c31adb2;
+  background-color: rgba(12, 49, 173, 0.698);
   color: #f0e224; }
   .btn--dark:hover {
     background-color: #ffffff;
@@ -290,7 +291,7 @@ body {
         margin-bottom: 5rem; } }
   .project__img {
     height: 30rem;
-    width: 30rem;
+    width: 45rem;
     display: block; }
     .project__img:hover {
       opacity: 0.5;
