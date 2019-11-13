@@ -222,7 +222,11 @@ body {
   animation: moveInBottom 1s ease-out 0.25s;
   animation-fill-mode: backwards; }
 
+.btn-container {
+  display: flex; }
+
 .btn-project, .btn-project:link, .btn-project:visited {
+  width: 50%;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -230,7 +234,7 @@ body {
   transition: all .2s; }
 
 .btn-project:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(-0.2rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn-project:active, .btn-project:focus {
@@ -240,14 +244,18 @@ body {
 .btn-project--light {
   color: #000;
   background-color: rgba(73, 167, 255, 0.9);
-  display: block; }
+  display: block;
+  transition: all .5s; }
   .btn-project--light:hover {
+    background-color: #49a7ff;
     color: #000; }
 
 .btn-project--dark {
   color: #fff;
   background-color: rgba(12, 49, 173, 0.9);
   display: block; }
+  .btn-project--dark:hover {
+    background-color: rgba(12, 49, 173, 0.9); }
 
 .contact__icon-box {
   padding: 5rem;
