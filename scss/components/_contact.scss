@@ -13,6 +13,9 @@
     text-align: center;
     color: $color-blue-light-1;
 
+    @include respond(phone){
+      padding: 2rem;
+    }
     
     // font-size: 3rem;
     
