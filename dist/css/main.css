@@ -276,6 +276,9 @@ body {
   padding: 5rem;
   text-align: center;
   color: #49a7ff; }
+  @media (max-width: 37.5em) {
+    .contact__icon-box {
+      padding: 2rem; } }
   .contact__icon-box--linkedIn {
     font-size: 5rem;
     color: #000;
