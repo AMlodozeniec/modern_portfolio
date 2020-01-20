@@ -272,6 +272,21 @@ body {
   .btn-project--dark:hover {
     background-color: rgba(12, 49, 173, 0.9); }
 
+.btn-project--inactive {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default; }
+  .btn-project--inactive:active, .btn-project--inactive:focus {
+    transform: translateY(0px);
+    box-shadow: 0 0 0 0; }
+  .btn-project--inactive:hover {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    transform: translateY(0);
+    box-shadow: 0 0 0 0; }
+
 .contact__icon-box {
   padding: 5rem;
   text-align: center;

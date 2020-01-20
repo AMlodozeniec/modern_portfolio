@@ -147,4 +147,26 @@
     }
 
   }
+
+  &--inactive{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: default;
+
+    &:active,
+    &:focus {
+      transform: translateY(0px);
+      box-shadow: 0 0 0 0;
+    }
+
+    &:hover{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+
+      transform: translateY(0);
+      box-shadow: 0 0 0 0;
+    }
+  }
 }
