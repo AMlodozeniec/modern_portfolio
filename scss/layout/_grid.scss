@@ -2,6 +2,14 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(phone){
+    &__contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -13,6 +21,9 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond(phone){
+        margin-right: 0;
+      }
     }
   }
 
