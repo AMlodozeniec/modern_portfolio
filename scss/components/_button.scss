@@ -2,9 +2,12 @@
 
 //Button Styles
 .btn {
+
+  
   &,
   &:link,
   &:visited {
+
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
@@ -12,12 +15,29 @@
     display: inline-block;
     border-radius: .1rem;
     width: 30%; 
+
+    
     
     transition: all .2s;
     
     &:not(:last-child){
       margin-right: 1.5rem;
+
+      @include respond(phone){
+        margin-right: 0rem;
+      }
     }
+
+    @include respond(phone){
+      margin-top: 3rem;
+      // border-radius: 1.1rem;
+      width: 75%;
+      margin-right: 0rem;
+    }
+
+    
+
+    
     
   }
 
@@ -56,6 +76,9 @@
 
 .btn-container{
   display: flex;
+  @include respond(phone){
+    flex-direction: column;
+  }
 }
 
 .btn-project{
@@ -67,6 +90,10 @@
     text-decoration: none;
     font-weight: 700;
     padding: 1.5rem 0;
+
+    @include respond(phone){
+      width: 100%;
+    }
     // display: inline-block;
     // border-radius: .4rem;
     // width: 49%; 
@@ -119,5 +146,27 @@
 
     }
 
+  }
+
+  &--inactive{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: default;
+
+    &:active,
+    &:focus {
+      transform: translateY(0px);
+      box-shadow: 0 0 0 0;
+    }
+
+    &:hover{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+
+      transform: translateY(0);
+      box-shadow: 0 0 0 0;
+    }
   }
 }
